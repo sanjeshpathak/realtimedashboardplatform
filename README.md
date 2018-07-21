@@ -100,7 +100,7 @@ Below is the description of CreateWidget property:
  <tr>
   <td>timeseries
   </td>
-  <td>
+  <td>[ ['x', '2018-01-01 06:30:05', '2018-01-01 06:35:10', '2018-01-01 06:40:15', '2018-01-01 06:45:20'], ['USA', 55,78, 50, 94], ['International', 65,31, 46, 32] ]
   </td>
   <td>
   </td>
