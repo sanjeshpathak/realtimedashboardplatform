@@ -3,6 +3,27 @@ A Real Time Streaming Dashboard Platform using MQTT Protocol. You can create you
 
 Here is how it works. The dashboard.js file has all the code required to run your dashboard. We have created widgets that you can use on your dashboard.
 
+
+Change these values to reflect your MQTT brokers in dashboard.js:
+var ip = "m10.cloudmqtt.com"; // replace this value with your brokers IP address or domain name
+var port = "37629"; // port number for your broker's web socket listening to. The dashboard platform will work only with websockets and
+not with tcp.
+
+And in this method, change the useSSL property:
+function connectMQTT() {
+    client = new Paho.MQTT.Client(ip, Number(port), id);
+    client.onConnectionLost = onConnectionLost;
+    client.onMessageArrived = onMessageArrived;
+    client.connect({
+        userName: username,
+        password: password,
+        useSSL: true, // if you are not using wss, change this property to false
+        onSuccess: onConnect,
+        onFailure: onFailure,
+        reconnect: true
+    });
+}
+
 To use a widget add these lines of code to your dashboard page:
 
  CreateWidget(
@@ -18,7 +39,8 @@ To use a widget add these lines of code to your dashboard page:
 Below is the description of CreateWidget property:
 
          bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here.
-         datastream: Specify to which topic this widget will bind or subscribe to on the MQTT broker (this is topic where the data for the widget will be published on the MQTT broker)
+         datastream: Specify to which topic this widget will bind or subscribe to on the MQTT broker
+         (this is topic where the data for the widget will be published on the MQTT broker)
          type: Specify here what type of chart you want this widget to display on the dashboard.
          height: Specify the height of the widget
  
@@ -114,3 +136,5 @@ Below is the description of CreateWidget property:
   </td>
  </tr>
  </table>
+
+There is a sample demo page demo.html in the repository here:
