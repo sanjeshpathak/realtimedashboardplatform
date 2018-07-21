@@ -63,10 +63,52 @@ Below is the description of CreateWidget property:
   <td>
   </td>
  </tr>
-   <tr>
+ <tr>
   <td>currencycard
   </td>
   <td>100000
+  </td>
+  <td>
+  </td>
+ </tr>
+ <tr>
+  <td>simpletable
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+ </tr>
+ <tr>
+  <tr>
+  <td>alerttext
+  </td>
+  <td>Your Alert Text
+  </td>
+  <td>
+  </td>
+ </tr>
+  <tr>
+  <td>labeltext
+  </td>
+  <td>Your Label Text
+  </td>
+  <td>
+  </td>
+ </tr>
+ <tr>
+ <tr>
+  <td>timeseries
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+ </tr>
+ <tr>
+  <td>spline
+  </td>
+  <td>
   </td>
   <td>
   </td>
