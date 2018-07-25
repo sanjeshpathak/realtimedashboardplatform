@@ -54,7 +54,7 @@ Below is the description of CreateWidget property:
  <tr>
   <td>Widget Type
   </td>
-  <td>Data Format for publishing to data to the widget
+  <td>Sample Data Format for publishing to data to the widget
   </td>
   <td>Widget on HTML
   </td>
@@ -62,7 +62,7 @@ Below is the description of CreateWidget property:
  <tr>
   <td>piechart
   </td>
-  <td>[['Fulfilled', 84], ['No Show',77],['Yet to Arrive', 89]]
+  <td>[['USA', 84], ['Europe',77],['Asia', 89]]
   </td>
   <td>
   </td>
@@ -78,7 +78,7 @@ Below is the description of CreateWidget property:
   <tr>
   <td>barchart
   </td>
-  <td>[['Fulfilled', 84], ['No Show',77],['Yet to Arrive', 89]]
+  <td>[['Product 1', 84], ['Product 2',77],['Product 3', 89]]
   </td>
   <td>
   </td>
@@ -143,4 +143,6 @@ Below is the description of CreateWidget property:
  </tr>
  </table>
 
-There is a sample demo page demo.html in the repository here:
+There is a sample demo page demo.html in the repository here: https://github.com/sanjeshpathak/realtimedashboardplatform/blob/master/demo.html
+
+Please look at the html page, it shows how easy it is to build a dashboard.
