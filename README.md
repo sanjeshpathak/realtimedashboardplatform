@@ -15,6 +15,7 @@ not with tcp
 usessl = true; // if you connecting to wss protocol set this to true, else false for ws
 ```
 
+## Building Dashboard Page
 
 To use a widget add these lines of javascript code to your dashboard page:
 
@@ -37,7 +38,7 @@ Below is the description of CreateWidget property:
          type: Specify here what type of chart you want this widget to display on the dashboard.
          height: Specify the height of the widget
  
- This platform currently supports the following widgets:
+ This platform currently supports the following widget types:
  
  <table>
  <tr>
@@ -134,4 +135,32 @@ Below is the description of CreateWidget property:
 
 There is a sample demo page demo.html in the repository here: https://github.com/sanjeshpathak/realtimedashboardplatform/blob/master/demo.html
 
-Please look at the html page, it shows how easy it is to build a dashboard.
+Please look at the html page. Use this as a base or a templete to build your dashboard page. This page contains all the Javascript and CSS files needed to build the dashboard.
+
+## Publishing Data to the Dashboard
+
+You can publish and stream data to the widget in two ways:
+
+### MQTT Protocol
+
+To publish data to the widget on the dashboard, publish the data (message format for each of the widget type is in the table above) on to the topic the widget is bound to. For example if you have a pie chart widget on the dashboard as:
+
+```sh
+ CreateWidget(
+     {
+         bindto: "widget-divid",
+         datastream: "demo/piechart",
+         type: "piechart",
+         label: "",
+         color: ['#00AA9F', '#018FBD', '#0066A4', '#00635A'],
+         height: 200
+      });
+```
+
+Publish the data to topic demo/piechart to your MQTT Broker. Take a look at the format of the message to be published from the table above for Pie Chart. In this particular case we are published three slices or categories namely -- USA, Europe and Asia -- with values on the pie chart 84, 77 and 89 respectively.
+
+
+### HTTP API
+
+In the download we also provide a Node app. You can start the Node app.
+
