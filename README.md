@@ -8,28 +8,17 @@ Here is how it works. The dashboard.js file has all the code required to run you
 
 Change these values to reflect your MQTT broker's details in dashboard.js:
 
+```sh
 var ip = "m10.cloudmqtt.com"; // replace this value with your brokers IP address or domain name
 var port = "37629"; // port number for your broker's web socket listener. The dashboard platform will work only with websockets and
-not with tcp.
+not with tcp
+usessl = true; // if you connecting to wss protocol set this to true, else false for ws
+```
 
-And in this method, change the useSSL property:
-
-function connectMQTT() {
-    client = new Paho.MQTT.Client(ip, Number(port), id);
-    client.onConnectionLost = onConnectionLost;
-    client.onMessageArrived = onMessageArrived;
-    client.connect({
-        userName: username,
-        password: password,
-        useSSL: true, // if you are not using wss, change this property to false
-        onSuccess: onConnect,
-        onFailure: onFailure,
-        reconnect: true
-    });
-}
 
 To use a widget add these lines of javascript code to your dashboard page:
 
+```sh
  CreateWidget(
      {
          bindto: "widget-divid",
@@ -39,7 +28,7 @@ To use a widget add these lines of javascript code to your dashboard page:
          color: ['#00AA9F', '#018FBD', '#0066A4', '#00635A'],
          height: 200
       });
-
+```
 Below is the description of CreateWidget property:
 
          bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here. This widget will be placed in the div id position on the dashboard (html) page.
