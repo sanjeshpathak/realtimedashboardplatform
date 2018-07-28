@@ -157,7 +157,7 @@ To publish data to the widget on the dashboard, publish the data (message format
       });
 ```
 
-Publish the data to topic demo/piechart to your MQTT Broker. Take a look at the format of the message to be published from the table above for Pie Chart. In this particular case we are published three slices or categories namely -- USA, Europe and Asia -- with values on the pie chart 84, 77 and 89 respectively.
+Publish the data to topic **demo/piechart** to your MQTT Broker. Take a look at the format of the message to be published from the table above for Pie Chart. In this particular case we are publishing three slices or categories namely -- USA, Europe and Asia -- with values on the pie chart 84, 77 and 89 respectively.
 
 
 ### HTTP API
