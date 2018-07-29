@@ -1,13 +1,20 @@
 # realtimedashboardplatform
+
 A Real Time Streaming Dashboard Platform using MQTT Protocol. You can create your own Real Time Streaming Dashboard using this platform. All you need is a MQTT broker, and a web server to host your html dashboard page. Infact you don't need a web server, you can open the dashboard page from your file system in a browser. This platform has been extensively tested on Chrome browser.
 
 ## MQTT Broker
 
-You need a MQTT Broker for the dashboard platform to work. There are many open source and commercially MQTT Brokers available. One of the most popular open source broker is [Eclipse Mosquitto]: <http://mosquitto.org/>. You can download and use it.
+You need a MQTT Broker for the dashboard platform to work. There are many open source and commercially MQTT Brokers available. One of the most popular open source broker is the Eclipse Mosquitto (<http://mosquitto.org/>). You can download install it locally and and use it.
 
-In case you do not want to host your own broker, you can 
+In case you do not want to host your own broker, there are brokers publicly available. Here's one hosted by Mosquitto project at <http://test.mosquitto.org/>
 
+The page here lists some hosted MQTT brokers that you can use with limited free usage: <https://diyprojects.io/8-online-mqtt-brokers-iot-connected-objects-cloud/#.W11X4dIzZPY>
 
+Here are some articles that explain what MQTT is all about:
+
+- <https://internetofthingsagenda.techtarget.com/definition/MQTT-MQ-Telemetry-Transport>
+- <https://en.wikipedia.org/wiki/MQTT>
+- <http://mqtt.org/>
 
 ## dashboard.js
 
@@ -165,7 +172,8 @@ To publish data to the widget on the dashboard, publish the data (message format
       });
 ```
 
-Publish the data to topic **demo/piechart** to your MQTT Broker. Take a look at the format of the message to be published from the table above for Pie Chart. In this particular case we are publishing three slices or categories namely -- USA, Europe and Asia -- with values on the pie chart 84, 77 and 89 respectively.
+The Eclipse Foundation has a project for the development of MQTT Client libraries for various platforms. Eclipse Paho project provides open-source client implementations of MQTT Prptocol. Here is the home page for Eclipse Paho: <https://www.eclipse.org/paho/>. They have MQTT  client libraries for many languages like Java, Python, C# etc. Download the library of your choice. You can make use of the library to publish data.
+
 
 
 ### HTTP API
