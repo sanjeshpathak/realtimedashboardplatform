@@ -4,9 +4,9 @@ A Real Time Streaming Dashboard Platform using MQTT Protocol. You can create you
 
 ## MQTT Broker
 
-You need a MQTT Broker for the dashboard platform to work. There are many open source and commercially MQTT Brokers available. One of the most popular open source broker is the Eclipse Mosquitto (<http://mosquitto.org/>). You can download install it locally and and use it.
+You need a MQTT Broker for the dashboard platform to work. There are many open source and commercial MQTT Brokers available. One of the most popular open source broker is the Eclipse Mosquitto (<http://mosquitto.org/>). You can download, install it locally and and use it.
 
-In case you do not want to host your own broker, there are brokers publicly available. Here's one hosted by Mosquitto project at <http://test.mosquitto.org/>
+In case you do not want to host your own broker, there are brokers available publicly. Here's one hosted by Mosquitto project at <http://test.mosquitto.org/>
 
 The page here lists some hosted MQTT brokers that you can use with limited free usage: <https://diyprojects.io/8-online-mqtt-brokers-iot-connected-objects-cloud/#.W11X4dIzZPY>
 
@@ -32,7 +32,7 @@ usessl = true; // if you connecting to wss protocol set this to true, else false
 
 ## Building Dashboard Page
 
-To use a widget add these lines of javascript code to your dashboard page:
+To use a widget, add these lines of javascript code to your dashboard page:
 
 ```sh
  CreateWidget(
@@ -47,10 +47,10 @@ To use a widget add these lines of javascript code to your dashboard page:
 ```
 Below is the description of CreateWidget property:
 
-         bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here. This widget will be placed in the div id position on the dashboard (html) page.
+         bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here. This widget will be automatically get placed in the div id element on the dashboard (html) page.
          datastream: Specify to which topic this widget will bind or subscribe to on the MQTT broker. When you publish data on to this topic, the widget will automatically get updated with the new data.
          (this is topic where the data for the widget will be published on the MQTT broker)
-         type: Specify here what type of chart you want this widget to display on the dashboard.
+         type: Specify the type of chart you want this widget to display on the dashboard.
          height: Specify the height of the widget
  
  This platform currently supports the following widget types:
@@ -150,7 +150,7 @@ Below is the description of CreateWidget property:
 
 There is a sample demo page demo.html in the repository here: https://github.com/sanjeshpathak/realtimedashboardplatform/blob/master/demo.html
 
-Please look at the html page. Use this as a base or a templete to build your dashboard page. This page contains all the Javascript and CSS files needed to build the dashboard.
+Please look at the html page. Use this as a base or a templete to build your own dashboard page quickly and easily. This page contains all the Javascript and CSS files needed to build the dashboard.
 
 ## Publishing Data to the Dashboard
 
