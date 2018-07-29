@@ -172,11 +172,14 @@ To publish data to the widget on the dashboard, publish the data (message format
       });
 ```
 
-The Eclipse Foundation has a project for the development of MQTT Client libraries for various platforms. Eclipse Paho project provides open-source client implementations of MQTT Prptocol. Here is the home page for Eclipse Paho: <https://www.eclipse.org/paho/>. They have MQTT  client libraries for many languages like Java, Python, C# etc. Download the library of your choice. You can make use of the library to publish data.
+Publish the data to topic **demo/piechart** on to the broker. The data will be automatically routed to the widget and the new values appear in real time on the Pie Chart on the dashboard.
+
+
+The Eclipse Foundation has a project for the development of MQTT Client libraries for various platforms. Eclipse Paho project provides open-source client implementations of MQTT Prptocol. Here is the home page for Eclipse Paho: <https://www.eclipse.org/paho/>. They have MQTT  client libraries for many languages like Java, Python, C# etc. Download the library of your choice. You can make use of the library to publish data to the MQTT Broker.
 
 
 
 ### HTTP API
 
-In the download we also provide a Node app. You can start the Node app.
+Work in progress. This section will be filled soon.
 
