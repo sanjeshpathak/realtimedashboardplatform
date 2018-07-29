@@ -45,14 +45,14 @@ To use a widget, add these lines of javascript code to your dashboard page:
          height: 200
       });
 ```
-Below is the description of CreateWidget property:
 
-         bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here. This widget will be automatically get placed in the div id element on the dashboard (html) page.
-         datastream: Specify to which topic this widget will bind or subscribe to on the MQTT broker. When you publish data on to this topic, the widget will automatically get updated with the new data.
-         (this is topic where the data for the widget will be published on the MQTT broker)
-         type: Specify the type of chart you want this widget to display on the dashboard.
-         height: Specify the height of the widget
- 
+The CreateWidget function takes in an object literal as it's parameter with the following properties. Below is the description of the  CreateWidget function:
+
+- bindto: Here you specify where in the html page you want to bind the widget to. You specify the div id here. This widget will automatically get placed in the div id element on the dashboard (html) page.
+- datastream: Specify to which topic this widget will bind or subscribe to on the MQTT broker. When you publish data on to this topic, the widget will automatically get updated with the new data (this is topic where the data for the widget will be published on the MQTT broker).
+- type: Specify the type of chart you want this widget to display on the dashboard.
+- height: Specify the height of the widget
+
  This platform currently supports the following widget types:
  
  <table>
