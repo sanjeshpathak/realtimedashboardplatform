@@ -205,7 +205,7 @@ function Gauge(widget) {
     });
 
     //Set Label
-    $("#" + widget.bindto).append("<div style='display:block'>" + widget.label + "</div>");
+    // $("#" + widget.bindto).append("<div style='display:block'>" + widget.label + "</div>");
 
     return widgetVar;
 }
