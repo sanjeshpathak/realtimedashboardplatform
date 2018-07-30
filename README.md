@@ -18,10 +18,10 @@ Here are some articles that explain what MQTT is all about:
 
 ## dashboard.js
 
-Here is how it works. The dashboard.js file has all the code required to run your dashboard. We have created widgets that you can use on your dashboard. There is a sample dashboard named demo.html in the repository. 
+Here is how it works. The dashboard.js file has all the code required to run your dashboard. We have created widgets that you can use on your dashboard. There is a sample dashboard named **demo.html** in the repository. Take a look at this file. It lists all the javascript and css files needed to run the dashboard. All these files are included in the repository and come with the download.
 
 
-Change these values to reflect your MQTT broker's details in dashboard.js:
+Change these values to reflect your MQTT broker's details in **dashboard.js**:
 
 ```sh
 var ip = "m10.cloudmqtt.com"; // replace this value with your brokers IP address or domain name
