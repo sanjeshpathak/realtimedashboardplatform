@@ -179,7 +179,7 @@ Publish the data to topic **demo/piechart** on to the broker. The data will be a
 
 The Eclipse Foundation has a project for the development of MQTT Client libraries for various platforms. Eclipse Paho project provides open-source client implementations of MQTT Prptocol. Here is the home page for Eclipse Paho: <https://www.eclipse.org/paho/>. They have MQTT  client libraries for many languages like Java, Python, C# etc. Download the library of your choice. You can make use of the library to publish data to the MQTT Broker.
 
-You can also use [MQTT Lens] (https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=en) a Google Chrome application that you can use to send data to MQTT Broker. You can use MQTT Lens to test your dashboard.
+You can also use MQTT Lens (https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=en) a Google Chrome application that you can use to send data to MQTT Broker. You can use MQTT Lens to test your dashboard.
 
 ### HTTP API
 
