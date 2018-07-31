@@ -23,18 +23,19 @@ Here is how it works. The dashboard.js file has all the code required to run you
 
 Change these values to reflect your MQTT broker's details in **dashboard.js**:
 
-```sh
+```
 var ip = "m10.cloudmqtt.com"; // replace this value with your brokers IP address or domain name
 var port = "37629"; // port number for your broker's web socket listener. The dashboard platform will work only with websockets and
 not with tcp
 usessl = true; // if you connecting to wss protocol set this to true, else false for ws
 ```
 
+
 ## Building Dashboard Page
 
 To use a widget, add these lines of javascript code to your dashboard page:
 
-```sh
+```
  CreateWidget(
      {
          bindto: "widget-divid",
@@ -45,6 +46,7 @@ To use a widget, add these lines of javascript code to your dashboard page:
          height: 200
       });
 ```
+
 
 The CreateWidget function takes in an object literal as it's parameter with the following properties. Below is the description of the  CreateWidget function:
 
