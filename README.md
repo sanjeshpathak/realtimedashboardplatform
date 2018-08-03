@@ -298,9 +298,10 @@ Using the simple table widget you can update each individual rows in the table s
       {
           bindto: "widget-divid",
           type: "simpletable" // 
-          datastream: ['firstrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data                                        'secondrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
+          datastream: ['firstrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data
+                       'secondrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
                        'thirdrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
-                      'fourthrowtopic' // topic of MQTT Broker where this row will be listening to or getting the data from
+                       'fourthrowtopic' // topic of MQTT Broker where this row will be listening to or getting the data from
                       ]								              ]
       });
 ```
