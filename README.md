@@ -217,6 +217,21 @@ Below is the description of the  CreateWidget function:
       });
 ```
 
+### Gauge Chart
+
+```
+ CreateWidget(
+     {
+         bindto: "widget-divid", // div id in the dashboard page where you want the widget to be displayed
+         datastream: "gaugetopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+         type: "gauge", // Gauge Chart widget will be displayed on the dashboard
+         label: "Label for Guage Chart", // A label that appears below the Gauge Chart
+         color_threshold_values: [40, 80, 100], // threshold values for displaying different colors
+         color_pattern: ['#FF0000', '#F97600', '#60B044'] // Custom Colors for the above corresponding threshold
+         height: 200 // height of the Pie Chart to be dsiplayed on dashbaord (in Pixels)
+      });
+```
+
 ### Card
 
 ```
