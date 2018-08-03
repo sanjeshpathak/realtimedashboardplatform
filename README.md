@@ -27,7 +27,7 @@ Change these values to reflect your MQTT broker's details in **dashboard.js**:
 var ip = "m10.cloudmqtt.com"; // replace this value with your brokers IP address or domain name
 var port = "37629"; // port number for your broker's web socket listener. The dashboard platform will work only with websockets and
 not with tcp
-usessl = true; // if you connecting to wss protocol set this to true, else false for ws
+usessl = true; // if you are connecting to wss protocol set this to true, else false for ws
 ```
 
 
@@ -72,6 +72,15 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   <td>[['USA', 84], ['Europe',77],['Asia', 89]]
   </td>
   <td>
+   CreateWidget(
+     {
+         - bindto: "widget-divid", // div id in the dashboard page where you want the widget to be displayed
+         - datastream: "demo/piechart", // topic of MQTT Broker where this widget will be listening to or getting the data from
+         type: "piechart", // Pie Chart widget will be displayed on the dashboard
+         label: "", // A label that appears below the Pie Chart
+         color: ['#00AA9F', '#018FBD', '#0066A4', '#00635A'], // Specify Colors to be used for display on Pie Chart
+         height: 200 // height of the Pie Chart to be dsiplayed on dashbaord (in Pixels)
+      });
   </td>
  </tr>
  <tr>
@@ -184,4 +193,49 @@ You can also use MQTT Lens (https://chrome.google.com/webstore/detail/mqttlens/h
 ### HTTP API
 
 Planning to build a HTTP API interface for publishing data to the dashboard. This REST API will convert from a HTTP POST to a MQTT publish. You can use this API to publish data to your dahboard. This is still a work in progress. This section will be filled soon.
+
+
+## CreateWidget
+
+Below is the description of the  CreateWidget function:
+
+### Pie Chart
+
+```
+ CreateWidget(
+     {
+         bindto: "widget-divid", // div id in the dashboard page where you want the widget to be displayed
+         datastream: "piecharttopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+         type: "piechart", // Pie Chart widget will be displayed on the dashboard
+         label: "", // A label that appears below the Pie Chart
+         color: ['#00AA9F', '#018FBD', '#0066A4', '#00635A'], // Specify Colors to be used for display on Pie Chart
+         height: 200 // height of the Pie Chart to be dsiplayed on dashbaord (in Pixels)
+      });
+```
+
+### Bar Chart
+
+```
+ CreateWidget(
+     {
+         bindto: "widget-divid", // div id in the dashboard page where you want the widget to be displayed
+         datastream: "barcharttopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+         type: "barchart", // Bar Chart widget will be displayed on the dashboard
+         color: ['#00AA9F', '#018FBD', '#0066A4', '#00635A'], // Specify Colors to be used for display for bars on Bar Chart
+         height: 200 // height of the Pie Chart to be dsiplayed on dashbaord (in Pixels)
+      });
+```
+
+### Card
+
+```
+ CreateWidget(
+     {
+         bindto: "widget-divid", // div id in the dashboard page where you want the widget to be displayed
+         datastream: "cardtopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+         type: "card", // A Card widget will be displayed on the dashboard
+         color: ['#00AA9F'] // Specify Color to be used for background of the Card
+      });
+```
+
 
