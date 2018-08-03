@@ -263,4 +263,28 @@ Below is the description of the  CreateWidget function:
       });
 ```
 
+### Alert Text
 
+```
+  CreateWidget(
+      {
+          bindto: "widget-divid",
+          datastream: "alerttexttopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+          type: "alerttext" // When a new data is published to this widget, alert pop up window appears on the dashboard at widget-divid location on the dashboard
+      });
+```     
+     
+### Text Label
+
+```
+  CreateWidget(
+      {
+          bindto: "widget-divid",
+          datastream: "labeltexttopic", // topic of MQTT Broker where this widget will be listening to or getting the data from
+          type: "labeltext" // The text published to this topic will be dynamically displayed at widget-divid location on the dashboard
+      });
+```
+
+
+
+      
