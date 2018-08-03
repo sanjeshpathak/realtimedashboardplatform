@@ -57,6 +57,8 @@ The CreateWidget function takes in an object literal as it's parameter with the 
 
  This platform currently supports the following widget types:
  
+ 
+
  <table>
  <tr>
   <td>Widget Type
@@ -276,6 +278,8 @@ Below is the description of the  CreateWidget function:
      
 ### Text Label
 
+A text label is just a plain text. You can dynamically update the label on the dashboard.
+
 ```
   CreateWidget(
       {
@@ -285,6 +289,20 @@ Below is the description of the  CreateWidget function:
       });
 ```
 
+### Table
 
+Using the simple table widget you can update each individual rows in the table separately. You can have as many rows (and as many columns) in the table as you want. Each row is bound to a topic.
 
-      
+```
+  CreateWidget(
+      {
+          bindto: "widget-divid",
+          type: "simpletable" // 
+          datastream: ['firstrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
+								               'secondrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
+								               'thirdrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
+								               'fourthrowtopic', // topic of MQTT Broker where this row will be listening to or getting the data from
+								              ]
+      });
+```
+
