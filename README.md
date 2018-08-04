@@ -178,8 +178,9 @@ To publish data to the widget on the dashboard, publish the data (message format
 
 Publish the data to topic **demo/piechart** on to the broker. The data will be automatically routed to the widget and the new values appear in real time on the Pie Chart on the dashboard.
 
-
 The Eclipse Foundation has a project for the development of MQTT Client libraries for various platforms. Eclipse Paho project provides open-source client implementations of MQTT Prptocol. Here is the home page for Eclipse Paho: <https://www.eclipse.org/paho/>. They have MQTT  client libraries for many languages like Java, Python, C# etc. Download the library of your choice. You can make use of the library to publish data to the MQTT Broker.
+
+The repository has Java client source files. You can use this program to stream data to demo.html dashboard. These files are under Java directory in the repository. It also containa jar file from Eclipse Paho Client for Java.
 
 You can also use MQTT Lens (https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=en) a Google Chrome application that you can use to send data to MQTT Broker. You can use MQTT Lens to test your dashboard.
 
