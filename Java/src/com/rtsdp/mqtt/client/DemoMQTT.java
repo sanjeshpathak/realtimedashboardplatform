@@ -4,10 +4,9 @@ public class DemoMQTT {
 	private static int roamount = 0;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int slp = 500;
-		String guageMsg = null;
-		String pieChartMsg = null;
+	    int slp = 500;
+	    String guageMsg = null;
+	    String pieChartMsg = null;
 	    String cardMessage = null;
 	    String clientId = "subsId";
 	    String barChartMessage = null;
