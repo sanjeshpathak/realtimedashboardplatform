@@ -65,15 +65,11 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   </td>
   <td>Sample Data Format for publishing to data to the widget
   </td>
-  <td>Widget on HTML
-  </td>
  </tr>
  <tr>
   <td>piechart
   </td>
   <td>[['USA', 84], ['Europe',77],['Asia', 89]]
-  </td>
-  <td>
   </td>
  </tr>
  <tr>
@@ -81,15 +77,11 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   </td>
   <td>57
   </td>
-  <td>
-  </td>
  </tr>
   <tr>
   <td>barchart
   </td>
   <td>[['Product 1', 84], ['Product 2',77],['Product 3', 89]]
-  </td>
-  <td>
   </td>
  </tr>
    <tr>
@@ -97,21 +89,15 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   </td>
   <td>32
   </td>
-  <td>
-  </td>
  </tr>
  <tr>
   <td>currencycard
   </td>
   <td>100000
   </td>
-  <td>
-  </td>
  </tr>
  <tr>
   <td>simpletable
-  </td>
-  <td>
   </td>
   <td>
   </td>
@@ -122,15 +108,11 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   </td>
   <td>Your Alert Text
   </td>
-  <td>
-  </td>
  </tr>
   <tr>
   <td>labeltext
   </td>
   <td>Your Label Text
-  </td>
-  <td>
   </td>
  </tr>
  <tr>
@@ -138,16 +120,6 @@ The CreateWidget function takes in an object literal as it's parameter with the 
   <td>timeseries
   </td>
   <td>[ ['x', '2018-01-01 06:30:05', '2018-01-01 06:35:10', '2018-01-01 06:40:15', '2018-01-01 06:45:20'], ['USA', 55,78, 50, 94], ['International', 65,31, 46, 32] ]
-  </td>
-  <td>
-  </td>
- </tr>
- <tr>
-  <td>spline
-  </td>
-  <td>
-  </td>
-  <td>
   </td>
  </tr>
  </table>
