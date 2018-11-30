@@ -128,6 +128,8 @@ There is a sample demo page demo.html in the repository here: https://github.com
 
 Please look at the html page. Use this as a base or a templete to build your own dashboard page quickly and easily. This page contains all the Javascript and CSS files needed to build the dashboard.
 
+View a real time dashboard live in action here: <http://rtsdp.eu5.org/dashboard/TestMosquittoOrgDashboard.html>. 
+
 ## Publishing Data to the Dashboard
 
 You can publish and stream data to the widget in two ways:
