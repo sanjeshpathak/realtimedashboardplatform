@@ -2,6 +2,9 @@
 
 A Real Time Streaming Dashboard Platform using MQTT Protocol. You can create your own Real Time Streaming Dashboard using this platform. All you need is a MQTT broker, and a web server to host your html dashboard page. Infact you don't need a web server, you can open the dashboard page from your file system in a browser. This platform has been extensively tested on Chrome browser.
 
+Lot of people get confused when we say real time dashboard. They think it is a browser refresh. No, it is not a browser refresh. Data gets streamed (or pushed) to each widget on the dashboard as soon an update for that widget arrives at the plartform. This is very efficient compared to browser refresh.
+
+
 ## MQTT Broker
 
 You need a MQTT Broker for the dashboard platform to work. There are many open source and commercial MQTT Brokers available. One of the most popular open source broker is the Eclipse Mosquitto (<http://mosquitto.org/>). You can download, install it locally and and use it.
